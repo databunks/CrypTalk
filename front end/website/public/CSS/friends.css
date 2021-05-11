@@ -1,0 +1,392 @@
+body
+{
+ background: url("../images/messagingBackground.jpg");
+ text-overflow: ellipsis;
+}
+.bottomTable
+{
+    position:absolute;
+    text-align: center;
+    left: 0px;
+
+
+}
+.bottomNavIcon{
+
+  background-color: rgb(22, 156, 234);
+
+}
+
+.bottomNavIcon:hover{
+
+  background-color: #92c8e5;
+}
+
+
+.bottomTab
+{
+    left: center;
+    bottom: 52px;
+    position:absolute;
+}
+
+
+
+.mainCard{
+  width: 90%;
+  height: 75%;
+  background-color: rgb(22, 156, 234);
+  left: 5%;
+  top: 10%;
+  border-radius: 0 0 25px 25px;
+  position: absolute;
+
+}
+.hide{
+
+  display: none;
+}
+.loader
+  {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#requestsLoader
+{
+  top: 25%;
+}
+
+#pendingLoader
+{
+  top:70%;
+}
+
+.topButtons{
+  top: 5%;
+  position: absolute;
+  z-index: 1;
+    border-radius: 25px;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+  height: 7%;
+  background-color: rgb(22, 156, 234);
+
+}
+
+.friendsButton{
+
+  height: 100%;
+  width: 50%;
+
+  float:left;
+  background-color: rgb(22, 156, 234);
+  border-radius: 25px 0px 0px 0 ;
+
+}
+
+.friendsButton h2{
+   color: white;
+   margin-left: 45%;
+   margin-top: 2%;
+
+
+}
+
+.requestsButton{
+
+  background-color: #808689;
+  height: 100%;
+  width: 50%;
+  float:right;
+  margin-top: 0;
+  border-radius: 0px 25px 0px 0 ;
+
+
+
+}
+
+.requestsButton h2{
+  margin-top: 2%;
+  color: white;
+  margin-left: 40%;
+
+}
+
+.requestsButton:hover{
+  background-color: #92c8e5;
+}
+
+.friendsButton:hover{
+  background-color: #92c8e5;
+}
+
+.active{
+  background-color: rgb(22, 156, 234);
+
+}
+
+.inactive{
+
+  background-color: 808689;
+
+}
+
+.usernameDiv{
+
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  bottom:10%;
+  max-width:80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+
+
+.friendCard{
+  margin-top: 2%;
+  margin-left: 1.5%;
+  width: 48%;
+  height: 30%;
+  border-radius: 25px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  float: left;
+
+
+
+
+}
+
+.avatar{
+ top: 5%;
+  width: 18%;
+  float:left;
+  position: absolute;
+  left:10%;
+}
+
+.friendlistDiv{
+  margin-top: 3%;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: grey;
+  height: 85%;
+  border-radius: 25px;
+  overflow-y: scroll;
+}
+
+.friend h4{
+
+  color: white;
+  float:left;
+  margin-top: 10%;
+  margin-left: 40%;
+
+  }
+
+.addImg{
+
+  width: 100%;
+
+
+}
+
+.addButton{
+
+ float:right;
+  border: none;
+  margin-right: 8%;
+  height: 8%;
+  width: 8%;
+  margin-top: 4%;
+  margin-left: 20px;
+
+
+
+
+
+}
+
+.hide
+{
+display:none;
+}
+
+.visible{
+
+  display: block;
+
+}
+
+.requestsDiv{
+
+  margin-top: 1%;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: grey;
+  height: 33%;
+  border-radius: 25px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+.requestCard{
+  margin-top: 2%;
+  margin-left: 1.5%;
+  width: 48%;
+  height: 80%;
+  border-radius: 25px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+ float: left;
+
+
+}
+
+.request h4{
+  color: white;
+  float:left;
+  margin-top: 10%;
+  margin-left: 40%;
+
+}
+
+
+
+
+
+
+.pendingDiv{
+  margin-top: 1%;
+  width: 97.5%;
+  margin-left: 0;
+  background-color: grey;
+  height: 33%;
+  border-radius: 25px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+
+.pendingCard{
+  margin-top: 2%;
+  margin-left: 1.5%;
+  width: 48%;
+  height: 80%;
+  border-radius: 25px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+ float: left;
+
+
+}
+
+.pending h4{
+  color: white;
+  float:left;
+  margin-top: 10%;
+  margin-left: 40%;
+
+}
+
+
+.searchBar img{ width: 80%;}
+
+.form-outline{
+
+  width: 90%;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+
+
+}
+
+#settingsIcon
+{
+    width: 50px;
+}
+
+#friendsIcon
+{
+    width:50px;
+}
+
+#messagingIcon
+{
+    width:50px;
+}
+
+
+#search-button{
+
+width: 4%;
+height: 3%;
+margin-top:4%;
+
+}
+
+#search-input{
+
+  width: 100%;
+  height: 10%;
+
+
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+   .addImg{ width:30px; }
+   h2{
+     margin-left: 20%;
+   }
+   .addButton{
+     margin-top: 1%;
+     margin-right: 25%
+
+   }
+ }
+
+ @media (min-width: 500px) and (max-width: 800px) {
+    .addImg{ width: 50px;
+     }
+     h2{
+       margin-left: 30%;
+     }
+     .addButton{
+       margin-top: 5%;
+        margin-right: 25%
+     }
+
+
+  }
+
+  .card-text{
+
+    margin-left: 30%;
+
+  }

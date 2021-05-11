@@ -1,0 +1,23 @@
+<html>
+    <h1>very sekret secure xdd</h1>
+    <button onclick = "signOut()">Sign out</button>
+    <script src="/__/firebase/8.3.2/firebase-app.js"></script>
+    <a href = "friends.html">Friends</a>
+
+<!-- Add Firebase products that you want to use -->
+<script src="/__/firebase/8.3.2/firebase-auth.js"></script>
+<script src="/__/firebase/8.3.2/firebase-firestore.js"></script>
+<script src="/__/firebase/init.js"></script>
+    <head>
+        <script src = "JS/accessSecureAPI.js"></script>
+        <script src = "JS/logout.js"></script>
+    </head>
+
+    <body>
+        <h2 id = "response"></h2>
+    </body>
+
+    <script>
+        getSecureAPI('https://us-central1-cryptalk-72a10.cloudfunctions.net/homePage');
+    </script>
+</html>

@@ -1,0 +1,119 @@
+
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Friends</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="bootstrap-5.0.0-beta2-dist\css\bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="bootstrap-5.0.0-beta2-dist\js\bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/friends.css">
+  <script src = "JS/getCookie.js"></script>
+  <script src = "JS/friends.js"></script>
+  <script src = "JS/checkToken.js"></script>
+  
+  
+  <script type="text/javascript">
+  
+    let button1 = null;
+    let button2 = null;
+    let panel1= null;
+    let panel2 = null;
+  
+  
+  
+    window.onload = function()
+    {
+        button1 = document.getElementById('friendsButton');
+        button2 = document.getElementById('requestsButton');
+        panel1= document.getElementById("leftPanel");
+        panel2= document.getElementById("rightPanel");
+  
+  
+  
+        button1.addEventListener('click', switchToOne);
+        button2.addEventListener('click', switchToTwo);
+        getFriends();
+        checkToken();
+      };
+  
+      function switchToOne(){
+  
+  
+  button1.className = "friendsButton active";
+  button2.className = "requestsButton inactive";
+  panel1.className="visible";
+  panel2.className="hide";
+  
+  
+  }
+  function switchToTwo(){
+  
+  button1.className = "friendsButton inactive ";
+  button2.className = "requestsButton active";
+  panel1.className="hide";
+  panel2.className="visible";
+  
+  
+  }
+  
+  
+  
+  </script>
+  
+  <body>
+  <div class="topButtons">
+  <div id="friendsButton" class="friendsButton">
+     <h2 >Friends</h2>
+  </div>
+  <div id="requestsButton" class="requestsButton">
+    <h2 >Requests</h2>
+  </div>
+  </div>
+  
+  <div class="mainCard">
+  <div id="leftPanel">
+    <div id = "friendsList" class="friendlistDiv">
+      <div class="loader" id="friendsListLoader"></div>
+    </div>
+  </div>
+  
+  <div id="rightPanel" class="hide">
+  
+    <div class="searchBar ">
+      <div class="input-group">
+        <div class="form-outline">
+          <label class="form-label" for="form1">Search Users</label>
+          <input placeholder="Press Enter To Search" id="search-input" type="search" class="form-control" />
+
+        </div>
+  
+        </div>
+  
+    </div>
+  
+    <div id = "requests" class="requestsDiv">
+      <div class="loader" id="requestsLoader"></div>
+    </div>
+  
+    <h3  style="margin-left: 2%; margin-top: .5%; color: white;">Received Requests</label>
+    <div id = "pending" class="pendingDiv">
+      <div class="loader" id="pendingLoader"></div>
+    </div>
+  </div>
+  
+  
+  </div>
+  
+  
+  
+  <div id = "bottomTab" class="bottomTab">
+  <table class = "vw-100 bottomTable">
+   <tr>
+     <td class="bottomNavIcon"><a href = "/friends.html"><img id = "friendsIcon" src = "images/friendsiconWhite.png"></a></td>
+     <td class="bottomNavIcon"><a href = "/Messaging.html"><img id = "messagingIcon" src = "images/messagingWhite.png"></a></td>
+     <td class="bottomNavIcon"><a href = "/settings.html"><img id = "messagingIcon" src = "images/settingsIconWhite.png" ></a></td>
+   </tr>
+  </table>
+  </div>
+  
+  </body>
+  </html>

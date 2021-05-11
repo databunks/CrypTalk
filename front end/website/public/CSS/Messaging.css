@@ -1,0 +1,248 @@
+body{background: url("../images/messagingBackground.jpg");
+  background-repeat:repeat ;
+  background-size: contain;
+  
+  }
+
+h5
+{
+  text-align: center;
+}
+  
+    .loader
+    {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  
+      .bottomTable
+      {
+          position:absolute;
+          text-align: center;
+          left: 0px;
+          background-color: rgb(22, 156, 234);
+      }
+  
+      .bottomTab
+      {
+          width: 100%;
+          left: 0;
+          bottom: 60px;
+          position:fixed;
+      }
+  
+      .icon{
+  
+        width:65px;
+  
+      }
+  
+      .sidebarButtons:hover{
+  
+        background-color: #92c8e5;
+  
+      }
+  
+  
+  .hide{
+  
+    display: none;
+  }
+  .show{
+  
+    display: block;
+  
+  }
+  
+.flex-container{
+
+  margin-top: 8%;
+  margin-bottom: 3%;
+
+}
+
+  .chatBox{
+  margin-left: 200px;
+  width: 100%;
+  }
+  
+  
+  
+  .bubbleWrapper {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-self: flex-end;
+    word-wrap: break-word;
+    color: #fff;
+    
+  }
+  .inlineContainer {
+    display: inline-flex;
+  }
+  .inlineContainer.own {
+    flex-direction: row-reverse;
+  }
+  .inlineIcon {
+    width:20px;
+    object-fit: contain;
+  }
+  .ownBubble {
+    min-width: 60px;
+    max-width: 700px;
+    padding: 14px 18px;
+    margin: 6px 8px;
+    background-color: #4c88ef;
+    border-radius: 16px 16px 0 16px;
+    border: 0px solid #443f56;
+    word-wrap: break-word;
+  
+  }
+  .otherBubble {
+    min-width: 60px;
+    max-width: 700px;
+    padding: 14px 18px;
+    margin: 6px 8px;
+    background-color: #6C8EA4;
+    border-radius: 16px 16px 16px 0;
+    border:0px solid #443f56;
+    word-wrap: break-word;
+  
+  }
+  
+  .otherBubble:hover{
+  
+    background-color: #92c8e5
+  }
+  
+  .ownBubble:hover{
+  
+    background-color: #92c8e5
+  }
+  
+  .own {
+    align-self: flex-end;
+  }
+  .other {
+    align-self: flex-start;
+  }
+  span.own, span.other{
+    font-size: 14px;
+    color: grey;
+  }
+  
+  
+  
+  
+  
+  :-webkit-scrollbar {
+      display: none;
+  }
+  
+  .navbar{
+  
+    margin-left: 0px;
+    background-color: rgb(22, 156, 234);
+    height: 13%;
+  }
+  
+  .friendCard:hover{
+  
+    background-color: #808689;
+  
+  }
+  
+  .otherBubble:hover + .hide{
+  
+    display:block;
+  }
+  
+  
+  .searchBar{
+  
+  width: 200px;
+  margin-top: 20px;
+  
+  }
+  
+  #sideBarContent {
+       position: fixed;
+      width: 200px;
+      overflow-y: scroll;
+      top: 13%;
+      height: 90%;
+      bottom: 0;
+      background: lightslategray;;
+  
+  }
+  #mainContent
+  {
+     position: relative;
+      margin-left: 200px;
+      height: 87%;
+    }
+  
+    #mainContentTopNav{
+      margin-left: 200px;
+      background-color: rgb(22, 156, 234);
+      max-height: 90px;
+  
+  
+    }
+  
+  #sideBarContent::-webkit-scrollbar {
+      display: none;
+  }
+  
+  #mobileNav{
+  
+    position: absolute;
+    top: 10%;
+    left: 2%;
+  
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (min-width: 0px) and (max-width: 600px) {
+     #sideBar{
+  
+       display:none;
+  
+     }
+  
+     #mainContent{
+  
+       margin-left: 0;
+     }
+  
+     .chatBox{margin-left: 0;}
+     .friendsHeading{display: none;}
+     #mobileNav{display: block;
+  
+     }
+  
+  
+   }
+  
+   @media (min-width: 600px) {
+     #mobileNav{display: none;}
+  
+   }

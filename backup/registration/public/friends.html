@@ -1,0 +1,18 @@
+<html>
+    <input id = "sendRequest">
+    <button onclick = "sendRequest"></button>
+
+    <script>
+        function sendRequest()
+        {
+            var username = document.getElementById('sendRequest').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://us-central1-cryptalk-72a10.cloudfunctions.net/sendRequest');
+            xhr.setRequestHeader('Username', 'username');
+            xhr.send(JSON.stringify({
+                username: username
+            }));
+            
+        }
+    </script>
+</html>
